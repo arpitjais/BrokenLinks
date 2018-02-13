@@ -52,6 +52,7 @@ public class BrokenLinks {
 
 			if (!url.startsWith(homePage)) {
 				System.out.println("URL belongs to another domain, skipping it.");
+				System.out.println(url + " is a valid link");
 				continue;
 			}
 
