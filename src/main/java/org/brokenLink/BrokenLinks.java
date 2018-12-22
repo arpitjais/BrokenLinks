@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.*;
 
 /**
  * Hello world!
@@ -19,8 +20,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BrokenLinks {
 	private static WebDriver driver = null;
 
-	public static void main(String[] args) {
-		System.out.println("Hello World!");
+	@Test
+	public void Brkens() {
+		System.out.println("Hello Worldsss!");
 
 		// TODO Auto-generated method stub
 
@@ -81,6 +83,6 @@ public class BrokenLinks {
 		}
 
 		driver.quit();
-
+		driver.close();
 	}
 }
